@@ -4,7 +4,7 @@ export default function Hero() {
       <img className="hero-bg" src="/images/hero_machine.jpeg" alt="" />
       <div className="hero-shade" />
       <div className="wrap hero-body">
-        <p className="kicker rise" style={{ '--d': '.1s' }}>Paper Converters · Kerala</p>
+        <p className="kicker rise" style={{ '--d': '.1s' }}>Paper Converter · Kerala</p>
         <h1 className="rise" style={{ '--d': '.25s' }}>
           Precision <em>newsprint</em> paper converting for every requirement.
         </h1>
@@ -12,6 +12,11 @@ export default function Hero() {
           <a href="#contact" className="cta">Request a quote <span>→</span></a>
           <a href="#products" className="link">Explore products</a>
         </div>
+        <a href="#products" className="feature rise" style={{ '--d': '.7s' }}>
+          <span className="feature-tag">★ Featured</span>
+          <span className="feature-name">Novelty Gold Newsprint</span>
+          <span className="feature-go">→</span>
+        </a>
       </div>
       <div className="wrap hero-meta">
         <div><b>46</b><span>Years of experience</span></div>

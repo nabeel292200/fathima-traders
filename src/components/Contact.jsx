@@ -14,7 +14,8 @@ export default function Contact() {
           <p className="label light">( 03 ) &nbsp;Contact</p>
           <h2 className="display">Let's convert <em>your requirement.</em></h2>
           <dl className="info">
-            <div><dt>Phone</dt><dd><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a></dd></div>
+            <div><dt>Phone</dt><dd className="phones">{CONTACT.phones.map((p) => <a key={p} href={`tel:${p.replace(/\s/g, '')}`}>{p}</a>)}</dd></div>
+            <div><dt>WhatsApp</dt><dd><a href={`https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.waText)}`} target="_blank" rel="noreferrer">+91 97464 04048 · Chat now →</a></dd></div>
             <div><dt>Email</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
             <div><dt>Address</dt><dd>{CONTACT.address}</dd></div>
           </dl>

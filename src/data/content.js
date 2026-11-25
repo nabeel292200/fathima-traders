@@ -1,7 +1,9 @@
 // All editable copy lives here. Replace the CONTACT placeholders with real details.
 export const CONTACT = {
-  phone: '+91 97464 04048',
+  phone: '+91 97464 04048', // main number (Call button)
+  phones: ['+91 97464 04048', '+91 99614 83604', '+91 98473 13313'],
   whatsapp: '919746404048', // country code + number, no + or spaces
+  waText: 'Hello Fathima Traders, I would like to enquire about your paper products. Please share the details and pricing.',
   email: 'fathimapapertgi@gmail.com',
   address: 'Fathima Traders, Kerala, India',
 }
@@ -25,10 +27,11 @@ export const PROCESS = [
 ]
 
 export const PRODUCTS = [
+  ['Novelty Gold Newsprint', 'Our featured premium newsprint — ask us for sizes and pricing.', 'gold', true],
   ['Newsprint Writing Paper', 'Smooth, economical writing sheets cut to your size.', 'pen'],
   ['Rough Book for Students', 'Durable, affordable rough books for schools and students.', 'book'],
-  ['Newsprint Cutting Paper', 'Clean precision-cut newsprint sheets for every use.', 'scissors'],
-  ['Tissue Paper', 'Soft, reliable tissue paper for everyday needs.', 'tissue'],
+  ['Newsprint Cutting Paper', 'High quality newsprint cutting paper for hotels and cool bars.', 'scissors'],
+  ['Tissue Paper', 'Economic tissue paper for functions and everyday needs.', 'tissue'],
   ['Printing Press Ream', 'Ready-to-run reams sized for printing presses.', 'ream'],
   ['Food Parcel Paper', 'Hygienic paper for food parcels and packing.', 'food'],
   ['Snacks Tray Paper', 'Tray-liner paper for snacks and takeaway servings.', 'tray'],

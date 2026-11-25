@@ -12,18 +12,21 @@ export default function Products() {
         <h2 className="display reveal">Paper for every need, <em>cut to your size.</em></h2>
         <div className="prod-grid">
           <ul className="plist reveal">
-            {PRODUCTS.map(([name, desc], i) => (
-              <li key={name} className={i === active ? 'on' : ''} onMouseEnter={() => setActive(i)}>
+            {PRODUCTS.map(([name, desc, , featured], i) => (
+              <li key={name} className={`${i === active ? 'on' : ''} ${featured ? 'feat' : ''}`} onMouseEnter={() => setActive(i)}>
                 <a href="#contact" onFocus={() => setActive(i)}>
-                  <span className="pn">{String(i + 1).padStart(2, '0')}</span>
-                  <span className="pt"><b>{name}</b><small>{desc}</small></span>
+                  <span className="pn">{featured ? '★' : String(i).padStart(2, '0')}</span>
+                  <span className="pt">
+                    {featured && <i className="ftag">Featured</i>}
+                    <b>{name}</b><small>{desc}</small>
+                  </span>
                   <span className="pa">→</span>
                 </a>
               </li>
             ))}
           </ul>
           <div className="pview reveal" aria-hidden="true">
-            {PICS.map((p, i) => <img key={p} src={p} alt="" loading="lazy" className={i === active % PICS.length ? 'on' : ''} />)}
+            {PICS.map((p, i) => <img key={p} src={p} alt="" className={i === active % PICS.length ? 'on' : ''} />)}
           </div>
         </div>
       </div>
