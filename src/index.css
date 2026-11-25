@@ -292,3 +292,44 @@ footer{background:#061738}
 @media (max-width:960px){.plist li.feat a{padding:22px 16px}.plist li.feat.on a{padding-left:16px}}
 @media (max-width:420px){.feature{gap:10px;padding:10px 12px 10px 10px;max-width:100%}.feature-name{font-size:.85rem}.feature-tag{font-size:.6rem;padding:6px 10px}}
 .info dd.phones{display:flex;flex-direction:column;gap:2px}
+
+/* ===== Match reference card: FedMobile blue on white ===== */
+:root{--fb:#1d5fae;--fb-dark:#164a8a;--fb-light:#e8f0fb;--txt:#2b2b2b}
+body{color:var(--txt);background:#fff}
+.about{background:#fff}
+.products{background:#f5f8fd}
+.display,.statement,.title{color:var(--fb)}
+.statement{color:var(--txt)}
+.statement em,.display em{color:var(--fb);border-color:#cfe0f6}
+.products .display em{color:#4d8ad6}
+.label{color:var(--fb)}
+.steps span,.pa,.plist li.on .pt b{color:var(--fb)}
+
+/* nav: white with blue when scrolled, like the card */
+.nav.scrolled{background:#ffffffF2;color:var(--fb);box-shadow:0 1px 0 #e3eaf5,0 8px 24px -12px #1d5fae33}
+.nav.scrolled .logo{color:var(--fb)}
+.nav.scrolled .logo em{color:#4d8ad6}
+.nav.scrolled .burger span{background:var(--fb)}
+.nav.scrolled .links .enq{border-color:var(--fb);background:var(--fb);color:#fff}
+.nav.scrolled .links a::after{background:var(--fb)}
+
+/* hero: blue tint instead of navy */
+.hero{background:var(--fb)}
+.hero-shade{background:linear-gradient(180deg,#1d5fae99 0,#1d5fae66 35%,#123f7af2 100%),linear-gradient(90deg,#123f7ad9 0,transparent 75%)}
+.kicker,.hero h1 em,.label.light,.why span{color:#bcd6f7}
+.cta:hover{color:var(--fb)}
+
+/* blue bands */
+.band-shade{background:linear-gradient(180deg,#1d5fae99,#123f7aee)}
+.contact{background:linear-gradient(160deg,#1f63b8,#164a8a)}
+.contact .display{color:#fff}
+.contact .display em{color:#bcd6f7}
+.cta.solid{background:#fff;border-color:#fff;color:var(--fb)}
+.cta.solid:hover{background:var(--fb-light);border-color:var(--fb-light)}
+footer{background:#123f7a}
+
+/* mobile menu + bottom bar */
+.mmenu{background:var(--fb)}
+.mbar{background:#fffffff5;border-top:1px solid #e3eaf5}
+.mbar a{color:var(--fb)}
+.mbar a.wa{background:var(--fb);color:#fff}
